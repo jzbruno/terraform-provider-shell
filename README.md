@@ -67,3 +67,42 @@ resource "aws_security_group" "allow_my_public_ip" {
 }
 ```
 &NewLine;
+
+## Attribute Reference
+
+### Required
+
+* `command`
+
+    The command string to run including arguments.
+
+    * Type: string
+
+### Optional
+
+* `shell`
+
+    The shell used to run commands including arguments.
+
+    * Type: List of strings
+    * Default:
+        
+        * Linux and Mac: ["/bin/bash", "-c"]
+        * Windows: ["cmd", "-C"]
+    
+* `trim_whitespace`
+
+    If set to true, all leading and trailing whitespace will be trimmed from the output of the command.
+
+    * Type: string
+    * Default: true
+
+### Exported
+
+The following attributes are exported in addition to the attributes listed above.
+
+* `output`
+
+    The output of the command run.
+
+    * Type: string
