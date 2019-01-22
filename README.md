@@ -16,6 +16,7 @@ that modify resources. A future addition of a resource should be used for that u
 
         ```bash
         git clone git@github.com:jzbruno/terraform-provider-shell.git
+        cd terraform-provider-shell/
         go get
         go build
         ```
@@ -31,9 +32,9 @@ that modify resources. A future addition of a resource should be used for that u
 2. Install the provider.
 
     ```bash
+    chmod +x terraform-provider-shell
     mkdir -p ~/.terraform.d/plugins/
     cp terraform-provider-shell ~/.terraform.d/plugins/
-    chmod +x ~/.terraform.d/plugins/terraform-provider-shell
     ```
     &NewLine;
 
