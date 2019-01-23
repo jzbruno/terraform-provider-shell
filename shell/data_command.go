@@ -15,23 +15,23 @@ func dataCommand() *schema.Resource {
 	return &schema.Resource{
 		Read: dataCommandRead,
 		Schema: map[string]*schema.Schema{
-			"command": &schema.Schema{
+			"command": {
 				Type:     schema.TypeString,
 				Required: true,
 			},
-			"shell": &schema.Schema{
+			"shell": {
 				Type:     schema.TypeList,
 				Optional: true,
 				Elem: &schema.Schema{
 					Type: schema.TypeString,
 				},
 			},
-			"trim_whitespace": &schema.Schema{
+			"trim_whitespace": {
 				Type:     schema.TypeBool,
 				Optional: true,
 				Default:  true,
 			},
-			"output": &schema.Schema{
+			"output": {
 				Type:     schema.TypeString,
 				Computed: true,
 			},

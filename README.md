@@ -68,6 +68,14 @@ resource "aws_security_group" "allow_my_public_ip" {
 ```
 &NewLine;
 
+## Acceptance Test
+
+To run the acceptance tests set test *TF_ACC* env var and run *go test*. An internet connection is required.
+
+```bash
+TF_ACC=1 go test -v ./...
+```
+
 ## Attribute Reference
 
 ### Required
