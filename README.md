@@ -2,6 +2,8 @@
 
 ## Overview
 
+[![travis-ci](https://travis-ci.org/jzbruno/terraform-provider-shell.svg?branch=master)](https://travis-ci.org/jzbruno/terraform-provider-shell)
+
 This is a basic shell provider that includes a data source to allow capturing output of commands
 for use with other Terraform resourcees.
 

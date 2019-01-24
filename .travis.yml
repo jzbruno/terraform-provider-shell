@@ -1,0 +1,12 @@
+language: go
+go:
+- 1.11
+install:
+- go get -t -v ./...
+script:
+- if [[ $(gofmt -l $(find . -name '*.go' | grep -v vendor)) ]]; then
+  echo "Found un-formatted go files. Run go fmt ./...";
+  exit 1;
+  fi
+- go vet ./...
+- go test -v ./...
