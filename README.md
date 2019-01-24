@@ -2,7 +2,7 @@
 
 ## Overview
 
-[![travis-ci](https://travis-ci.org/jzbruno/terraform-provider-shell.svg?branch=master)](https://travis-ci.org/jzbruno/terraform-provider-shell)
+[![Build Status](https://travis-ci.org/jzbruno/terraform-provider-shell.svg?branch=master)](https://travis-ci.org/jzbruno/terraform-provider-shell) [![Maintainability](https://api.codeclimate.com/v1/badges/fbfa20b01e46995af395/maintainability)](https://codeclimate.com/github/jzbruno/terraform-provider-shell/maintainability) [![Go Report Card](https://goreportcard.com/badge/github.com/jzbruno/terraform-provider-shell)](https://goreportcard.com/report/github.com/jzbruno/terraform-provider-shell)
 
 This is a basic shell provider that includes a data source to allow capturing output of commands
 for use with other Terraform resourcees.
