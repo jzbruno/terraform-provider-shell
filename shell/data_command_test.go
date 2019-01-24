@@ -19,7 +19,7 @@ func TestAccDataSourceCommand(t *testing.T) {
 		Steps: []resource.TestStep{
 			{
 				Config: testDataShellCommandConfig,
-				Check: checkDataSourceAttributes(resourceName),
+				Check:  checkDataSourceAttributes(resourceName),
 			},
 		},
 	})
