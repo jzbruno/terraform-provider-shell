@@ -1,0 +1,9 @@
+language: go
+go:
+- 1.9
+install:
+- go get -t -v ./...
+script:
+- if [[ -n $(gofmt -d $(find . -name '*.go' | grep -v vendor)) ]]; then echo "Please run go fmt ./..."; fi
+- go vet ./...
+- go test -v ./...
