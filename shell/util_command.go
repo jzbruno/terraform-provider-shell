@@ -25,7 +25,7 @@ func commandParse(d *schema.ResourceData) (command string, args []string, err er
 			command = "cmd"
 			args = []string{"/C"}
 		} else {
-			command = "/bin/bash"
+			command = "/bin/sh"
 			args = []string{"-c"}
 		}
 	}
